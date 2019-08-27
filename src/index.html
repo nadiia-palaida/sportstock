@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Document</title>
+	<link href="css/all_styles.css" rel="preload" as="style">
+	<link href="css/style.css" rel="preload" as="style">
+
+	<link href="css/all_styles.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<!-- add class lazy to img and use data-src for lazy-load -->
+	<header>
+		<div class="top-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-8 col-sm-8 col-8 mr-lg-auto mr-md-auto">
+						<nav>
+							<ul class="menu">
+								<li class="menu-item"><a href="#">Фотографии</a></li>
+								<li class="menu-item"><a href="#">Видео</a></li>
+								<li class="menu-item"><a href="#">Редакционные</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-lg-1 col-md-1 col-sm-4 col-4 ml-lg-auto ml-md-auto">
+						<div class="language">
+							<img class="select-language" src="img/header/ru-icon.png" alt="ru-icon">
+							<button class="select-language"><i class="fas fa-sort-down"></i></button>
+							<div id="drop-down" class="hide">
+								<ul>
+									<li><a href="#">Русский</a></li>
+									<li><a href="#">Украинский</a></li>
+									<li><a href="#">Английский</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header navbar navbar-expand-md navbar-light" role="navigation">
+			<div class="container">
+				
+				<div class="row collapse navbar-collapse" id="navbarSupportedContent">
+					
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-8 m-auto">
+						<div class="logo">
+							<div class="logo-img">
+								<img src="img/header/football.png" alt="football ball">
+							</div>
+							<h2>sportstock</h2>
+						</div>
+					</div>
+					<div class="col-xl-5 col-lg-6 col-md-5 col-sm-10 col-12 m-auto m-sm-auto ml-lg-auto order-lg-1 order-xl-1 order-md-1 order-sm-12 order-12">
+						<div class="search">
+							<div class="search-items">
+								<form action="#">
+									<input class="input-search" type="text" placeholder="Футбол">
+									<button class="clear-search">&times</button>
+									<span>|</span>
+									<select name="Categories" id="categories">
+										<option value="1">Фото и ведео</option>
+										<option value="2">2Lorem</option>
+										<option value="3">3Lorem</option>
+										<option value="4">4Lorem</option>
+										<option value="5">5 Lorem</option>
+									</select>
+									<span>|</span>
+									<button><i class="fas fa-search"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-3 col-md-4 col-sm-6 col-12 m-auto ml-lg-auto ml-md-auto order-lg-12 order-xl-12 order-md-12 order-sm-1 order-1">
+						<div class="autorization">
+							<button class="sign_up button">
+								Зарегистрироваться
+							</button>
+							<button class="login button light">
+								Вход		
+							</button>
+						</div>
+					</div>
+
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<section class="top-way">
+		<div class="container">
+			<div class="row">
+				<div class="links">
+					<a href="#">Главная</a>
+					<span><i class="fas fa-chevron-right"></i></span>
+					<a href="#">Футбол</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="main">
+		<div class="container">
+			<div class="row">
+				<div class="titles">
+					<h1>Лучшие спортивные  фотографии високого разрешения</h1>
+					<h5>Sportstock - ваш лучший источник спортивных высококачественных фотографий. Наша коллекция изображений откроет новые горизонты для ваших проектов и станет отличним решениемм с выгодными ценами.</h5>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="categories">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/football.jpeg" class="lazy" alt="">
+						<span class="categorie_name">Футбол</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/skis.jpg" class="lazy" alt="">
+						<span class="categorie_name">Лыжи</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/tennis.jpg" class="lazy" alt="">
+						<span class="categorie_name">Теннис</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/karate.jpg" class="lazy" alt="">
+						<span class="categorie_name">Карате</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/valleyball.jpg" class="lazy" alt="">
+						<span class="categorie_name">Волейбол</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/basketball.jpg" class="lazy" alt="">
+						<span class="categorie_name">Баскетбол</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/parashut.jpg" class="lazy" alt="">
+						<span class="categorie_name">Парашют</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/running.jpg" class="lazy" alt="">
+						<span class="categorie_name">Бег</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/ushu.jpg" class="lazy" alt="">
+						<span class="categorie_name">Ушу</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/fitness.jpg" class="lazy" alt="">
+						<span class="categorie_name">Фитнес</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/bodi.jpg" class="lazy" alt="">
+						<span class="categorie_name">Бодибилдинг</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/dayv.jpg" class="lazy" alt="">
+						<span class="categorie_name">Дайвинг</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/football.jpeg" class="lazy" alt="">
+						<span class="categorie_name">Футбол</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/skis.jpg" class="lazy" alt="">
+						<span class="categorie_name">Лыжи</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/tennis.jpg" class="lazy" alt="">
+						<span class="categorie_name">Теннис</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/karate.jpg" class="lazy" alt="">
+						<span class="categorie_name">Карате</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/valleyball.jpg" class="lazy" alt="">
+						<span class="categorie_name">Волейбол</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/basketball.jpg" class="lazy" alt="">
+						<span class="categorie_name">Баскетбол</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/parashut.jpg" class="lazy" alt="">
+						<span class="categorie_name">Парашют</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/running.jpg" class="lazy" alt="">
+						<span class="categorie_name">Бег</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/ushu.jpg" class="lazy" alt="">
+						<span class="categorie_name">Ушу</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/fitness.jpg" class="lazy" alt="">
+						<span class="categorie_name">Фитнес</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/bodi.jpg" class="lazy" alt="">
+						<span class="categorie_name">Бодибилдинг</span>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 category">
+					<a href="#" class="img-wrap">
+						<img data-src="img/categories/dayv.jpg" class="lazy" alt="">
+						<span class="categorie_name">Дайвинг</span>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="popular-categories">
+		<div class="container">
+			<h2>Популярные категории фотобанка</h2>
+			<div class="row">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+					<div class="categories-item">
+						<ul>
+							<li><a href="#">Футбол</a></li>
+							<li><a href="#">Баскетбол</a></li>
+							<li><a href="#">Теннис</a></li>
+							<li><a href="#">Волейбол</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+					<div class="categories-item">
+						<ul>
+							<li><a href="#">Горные лыжи</a></li>
+							<li><a href="#">Скиборд</a></li>
+							<li><a href="#">Фристайл</a></li>
+							<li><a href="#">Слалом</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+					<div class="categories-item">
+						<ul>
+							<li><a href="#">Парашют</a></li>
+							<li><a href="#">Дайвинг</a></li>
+							<li><a href="#">Водное поло</a></li>
+							<li><a href="#">Борьба</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+					<div class="categories-item">
+						<ul>
+							<li><a href="#">Карате</a></li>
+							<li><a href="#">Ушу</a></li>
+							<li><a href="#">Бокс</a></li>
+							<li><a href="#">Другое</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class=" col-xl-3 col-lg-3 col-md-3 col-sm-5 col-4">
+					<div class="socials">
+						<a href="#" class="logo">
+							<i class="far fa-futbol"></i>
+							<h2>sportstock</h2>
+						</a>
+					</div>
+				</div>
+				<div class="socials-item col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 ml-auto ">
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook-square"></a></i></li>
+						<li><a href="#"><i class="fab fa-twitter-square"></a></i></li>
+						<li><a href="#"><i class="fab fa-google-plus-square"></a></i></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="information ">
+						<ul>
+							<li>
+								<button id="btn-help">Помощь<i class="fas fa-chevron-down"></i></button>
+								<div class="dropdown-list hide" id="help-item">
+									<a href="tel: 380999999999">
+										380999999999
+									</a><a href="mailto: example@gmail.com">
+										example@gmail.com
+									</a>
+								</div>
+							</li>
+							<li>
+								<button id="btn-stock">StockPages<i class="fas fa-chevron-down"></i></button>
+								<div class="dropdown-list hide" id="stock-item">
+									<a href="#">
+										stock-item
+									</a><a href="#">
+										stock-item
+									</a>
+								</div>
+							</li>
+							<li>
+								<button id="btn-law">Правовая информация<i class="fas fa-chevron-down"></i></button>
+								<div class="dropdown-list hide" id="law-item">
+									<a href="#">
+										Document
+									</a>
+									<a href="#">
+										Document
+									</a>
+								</div>
+							</li>
+							<li>
+								<button id="btn-contact">Контакты<i class="fas fa-chevron-down"></i></button>
+								<div class="dropdown-list hide" id="contacts-item">
+									<a href="#">
+										Phone
+									</a>
+									<a href="#">
+										Email
+									</a>
+									<a href="#">
+										Instagram
+									</a>
+									<a href="#">
+										Facebook
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="developer col-lg-6 col-md-7 col-sm-12  col-8 m-sm-auto m-auto">
+					<p>2019 StockPages, Inc. Все права защищены. Сделано во Львове.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/all.js" defer></script>
+</body>
+</html>
